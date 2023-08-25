@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'rubik', sans-serif;
+    color: #333;
+}
+
+header {
+    /* width: 100vh; */
+    height: 100vh;
+    display: grid;
+    background-color: burlywood;
+    place-items: center;
+    /* visibility: hidden; */
+}
+
+.banner {
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 6px 6px 4px 6px #8888885b ;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn {
+    background: rgb(131, 131, 255);
+    font-size: 16px;
+    padding: 8px 14px;
+    color: white;
+    border: 2px solid rgb(131, 131, 255);
+    border-radius: 6px;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(131, 131, 255);
+    border-color: rgb(131, 131, 255);
+}
+
+.model-overlay {
+    /* display: none; */
+    position: fixed;
+    background-image:url('1600w-JLofAI27pCg.webp');
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    visibility: hidden ;
+    z-index: -10;
+    transition: all 1s;
+   
+    
+}
+
+.open-overlay{
+    visibility: visible ;
+    z-index: 10;
+    
+}
+
+.model-container { 
+    /* padding: 40px 60px; */
+    width: 40vw;
+    height: 30vh;
+    /* display: inline-block; */
+    background: transparent;
+    border-radius: 8px;
+    display: grid;
+    color: aqua;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+}
+
+.close-btn {
+    position: absolute;
+    left: 560px;
+    top: 10px;
+    font-size: 40px;
+    color: red;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
